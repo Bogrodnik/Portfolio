@@ -61,7 +61,7 @@ function init() {
     renderer.setClearColor(new THREE.Color('#000000'), 1)
     renderer.toneMapping = THREE.ReinhardToneMapping;;
     renderer.shadowMap.enabled = true;
-    renderer.physicallyCorrectLights = false;
+    renderer.physicallyCorrectLights = true;
 
 
     document.body.appendChild(renderer.domElement);
