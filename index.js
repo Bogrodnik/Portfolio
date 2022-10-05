@@ -1,10 +1,10 @@
 
 import gsap from "https://cdn.skypack.dev/gsap"
 
-import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js';
+import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js'
 
-import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'https://unpkg.com/three@0.126.1/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.126.1/examples/jsm/controls/OrbitControls.js'
+import { GLTFLoader } from 'https://unpkg.com/three@0.126.1/examples/jsm/loaders/GLTFLoader.js'
 import { RenderPass } from 'https://unpkg.com/three@0.126.1/examples/jsm/postprocessing/RenderPass.js';
 import { ShaderPass } from 'https://unpkg.com/three@0.126.1/examples/jsm/postprocessing/ShaderPass.js';
 import { BloomPass } from 'https://unpkg.com/three@0.126.1/examples/jsm/postprocessing/BloomPass.js';
@@ -15,7 +15,7 @@ import { RGBELoader } from 'https://unpkg.com/three@0.126.1/examples/jsm/loaders
 
 import Stats from 'https://unpkg.com/three@0.126.1/examples/jsm/libs/stats.module.js';
 import { GUI } from 'https://unpkg.com/three@0.126.1/examples/jsm/libs/dat.gui.module.js';
-import * as dat from "https://cdn.skypack.dev/dat.gui";
+import * as dat from "https://cdn.skypack.dev/dat.gui"
 //loading
 
 
