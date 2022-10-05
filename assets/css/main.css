@@ -62,7 +62,7 @@ body {
 }
 
 mark {
-	background-color: transparent;
+	background-color: grey;
 	color: inherit;
 }
 
