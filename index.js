@@ -103,7 +103,7 @@ function init() {
                 if (n.isMesh)
                     n.castShadow = true;
                 n.receiveShadow = true;
-                if (n.material) n.material.anisotropy = 16;
+                if (n.material) n.material.anisotropy = 8;
             })
             scene.add(model);
             mixer = new THREE.AnimationMixer(model);
