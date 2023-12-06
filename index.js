@@ -46,7 +46,7 @@ function init() {
 
     // Scene
     const scene = new THREE.Scene()
-    scene.fog = new THREE.FogExp2(0x000000, .3);
+    scene.fog = new THREE.FogExp2(0x000000, .4);
 
     /**
  * Renderer
@@ -301,8 +301,8 @@ function init() {
 
         if (mouseX > 0)
             if (mouseY > 0)
-                particlesMesh.rotation.x += -mouseY * (deltaTime * 0.00008)
-        particlesMesh.rotation.y += -mouseX * (deltaTime * 0.00008)
+                particlesMesh.rotation.x += -mouseY * (deltaTime * 0.0008)
+        particlesMesh.rotation.y += -mouseX * (deltaTime * 0.0008)
 
 
         // Update Orbital Controls
