@@ -60,8 +60,8 @@ function init() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
     renderer.setClearColor(new THREE.Color('#000000'), 1)
     renderer.toneMapping = THREE.ReinhardToneMapping;;
-    renderer.shadowMap.enabled = true;
-    renderer.physicallyCorrectLights = true;
+    renderer.shadowMap.enabled = false;
+    renderer.physicallyCorrectLights = false;
 
 
     document.body.appendChild(renderer.domElement);
@@ -103,7 +103,7 @@ function init() {
                 if (n.isMesh)
                     n.castShadow = true;
                 n.receiveShadow = true;
-                if (n.material) n.material.anisotropy = 8;
+                if (n.material) n.material.anisotropy = 2;
             })
             scene.add(model);
             mixer = new THREE.AnimationMixer(model);
@@ -128,7 +128,7 @@ function init() {
     // Objects
     const geometry = new THREE.SphereGeometry(0, 0, 0, 0)
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCnt = 4000;
+    const particlesCnt = 3000;
     const posArray = new Float32Array(particlesCnt * 3)
 
     for (let i = 0; i < particlesCnt * 3; i++) {
@@ -167,8 +167,8 @@ function init() {
 
     const pointLight2 = new THREE.PointLight(0xff0000, 100)
     pointLight2.position.set(-5.95, -17.85, -2.31)
-    pointLight2.distance = 10000;
-    pointLight2.intensity = 1500;
+    pointLight2.distance = 100;
+    pointLight2.intensity = 150;
     pointLight2.castShadow = true;
     pointLight2.shadow.bias = -0.0001;
     pointLight2.shadow.mapSize.width = 1024 * 4;
